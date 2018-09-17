@@ -4,8 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
+    "start": "ng serve --sourcemaps --extract-css",
+    "build": "ng build --sourcemaps --extract-css --watch --delete-output-path=false",
+    "build-clean": "ng build --sourcemaps --extract-css",
+    "build-prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
